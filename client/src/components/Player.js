@@ -7,7 +7,7 @@ export default function Player(props){
         <div>
              <div className='player'>
                 <h2>{props.player.name}</h2>
-                <span>Country: {props.player.country}, Searches: {props.player.searches} </span>
+                <span data-testid="span-test" >Country: {props.player.country}, Searches: {props.player.searches} </span>
              
               
             </div>
