@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+.dark-mode {
+  color: #fff;
+  background-color: #313843;
+}
+
+.nav-bar{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin:0  20px;
+  
+
+}
+
+button {
+  width:100px;
+}
