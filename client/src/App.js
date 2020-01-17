@@ -1,4 +1,6 @@
 import React from 'react';
+import PlayerList from './components/PlayerList';
+import Nav from './components/Nav';
 import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
@@ -19,17 +21,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        
-        {this.state.players.map((player, index) => {
-          return (
-            <div key={index}>
-              {player.name}, Country: {player.country}, Searches: {player.searches}
-              <hr />
-              
-            </div>
-          )
-        })
-        }
+        <Nav />
+        <PlayerList players={this.state.players} />
+          
 
       </div>
     );
