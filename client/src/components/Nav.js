@@ -9,7 +9,7 @@ export default function Nav(){
   
       
     return (
-       <div>
+       <div className='nav-bar'>
            <h1>Popular Players</h1>
            <button data-testid="toggle" onClick={()=>setDarkMode(toggleMode(darkMode))}> {darkMode ?  "Light" : "Dark"}</button>
        </div>
